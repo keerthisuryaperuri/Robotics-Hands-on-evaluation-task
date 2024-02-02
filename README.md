@@ -6,15 +6,25 @@ simulates two picking modes for the generated orders. Below is a brief documenta
 code: 
 
 **1. Parameters Used:**
- ‘N’: Number of robots in the warehouse. 
- ‘L’ and ‘W’: Grid size of the warehouse. 
- ‘P’: Number of packing stations in the warehouse. 
- ‘mean_interval’: Mean interval between order generations (in seconds). 
+
+ ‘N’: Number of robots in the warehouse.
+
+ ‘L’ and ‘W’: Grid size of the warehouse.
+
+ ‘P’: Number of packing stations in the warehouse.
+
+ ‘mean_interval’: Mean interval between order generations (in seconds).
+
  ‘variance’: Variance for order generation time. 
+
  ‘mean_items_per_order’: Mean number of items per order. 
+
  ‘variance_items_per_order’: Variance for item count distribution. 
- ‘packing_time_per_item’: Time required to pack one item (in seconds). 
+
+ ‘packing_time_per_item’: Time required to pack one item (in seconds).
+
  ‘robot_speed’: Speed of the robots in meters per second. 
+
  ‘simulation_time’: Total simulation time in seconds (1 hour in this case). 
 
 **2. Initialization:**
