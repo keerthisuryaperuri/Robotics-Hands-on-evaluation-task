@@ -1,4 +1,4 @@
-**Robotics : **
+**Robotics**
 
 **Code Documentation:**
 The attached python code will generate random orders in a warehouse scenario and 
