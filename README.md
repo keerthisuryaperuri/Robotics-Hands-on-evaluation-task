@@ -1,11 +1,11 @@
-**Robotics : 
+**Robotics : **
 
-Code Documentation:**
+**Code Documentation:**
 The attached python code will generate random orders in a warehouse scenario and 
 simulates two picking modes for the generated orders. Below is a brief documentation for this 
 code: 
 
-**1. Parameters Used: **
+**1. Parameters Used:**
  ‘N’: Number of robots in the warehouse. 
  ‘L’ and ‘W’: Grid size of the warehouse. 
  ‘P’: Number of packing stations in the warehouse. 
@@ -15,20 +15,23 @@ code:
  ‘variance_items_per_order’: Variance for item count distribution. 
  ‘packing_time_per_item’: Time required to pack one item (in seconds). 
  ‘robot_speed’: Speed of the robots in meters per second. 
-** ‘simulation_time’: Total simulation time in seconds (1 hour in this case). 
-2. Initialization: **
+ ‘simulation_time’: Total simulation time in seconds (1 hour in this case). 
+
+**2. Initialization:**
  Initialize variables and data structures and create an empty list to store orders. 
  Set the initial packing station, order number and current time. 
-**3. Order Generation (Part 1): **
+
+**3. Order Generation (Part 1):**
  Generate random orders within the specified simulation time. 
  For each order, record the generated time, order number, a list of randomly selected 
 items, and the assigned packing station. 
  Update variables for the next order generation. 
-**4. Functions: **
+
+**4. Functions:**
  ‘generate_item_list()’: Generates a random item list for an order. 
  ‘manhattan_distance()’: Calculates the Manhattan distance between two nodes in the 
 grid. 
-**Manhattan Distance: **
+**Manhattan Distance:**
 In this problem, the Manhattan distance is used to calculate the distance between two 
 nodes present in the grid pattern of warehouse. It is used to estimate the travel distance for 
 robots to move between nodes in the grid. 
@@ -48,12 +51,14 @@ the robot and the designated packing station. This is done to account for the ti
 the robot to move from the last pick node to the packing station.
 The Manhattan distance is a simple and effective way to estimate travel distance within a gridbased warehouse environment, allowing the code to calculate travel times for the robots in the 
 simulation.
+
 **5. Simulation of Picking Modes (Part 2):**
  Loop through each order and its item list.
  Simulate both picking modes (whole order and split order) for each item.
  Calculate the time taken for each picking mode, considering robot availability and 
 packing time.
  Store the completion times for both modes in separate lists.
+
 **6. Results (Data Storage and CSV Output):**
  Store the completion times for both modes along with order numbers and pick nodes 
 in separate lists.
@@ -69,8 +74,8 @@ is (00:27:32) and for mode_2 as items were picked by multiple robot’s and comp
 each item will be different and also second item will be picked only if it already picks the first 
 item.
 
-Below is the documentation for the common libraries and dependencies used in the 
-code: 
+**Below is the documentation for the common libraries and dependencies used in the 
+code: **
 The code utilizes the following Python libraries and dependencies and make sure to install 
 these libraries before running the code. 
 1. Spider IDE: Created the script and generated the results into csv file using Spider's 
@@ -87,8 +92,8 @@ require separate installation.
 5. Random: This library is used for generating random numbers and also to make random 
 selections. It is also part of Python's standard library and does not require separate 
 installation.
-**
-Steps to run the script:** 
+
+**Steps to run the script: **
 1. Open Spider IDE or make sure the above-mentioned libraries were installed into your 
 environment. 
 2. Copy the project.py file and execute it using Spider or any other python compiler to which 
