@@ -94,7 +94,7 @@ require separate installation.
 selections. It is also part of Python's standard library and does not require separate 
 installation.
 
-**Steps to run the script: **
+**Steps to run the script:**
 1. Open Spider IDE or make sure the above-mentioned libraries were installed into your 
 environment. 
 2. Copy the project.py file and execute it using Spider or any other python compiler to which 
