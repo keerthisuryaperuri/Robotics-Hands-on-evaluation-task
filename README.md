@@ -75,7 +75,8 @@ each item will be different and also second item will be picked only if it alrea
 item.
 
 **Below is the documentation for the common libraries and dependencies used in the 
-code: **
+code:**
+
 The code utilizes the following Python libraries and dependencies and make sure to install 
 these libraries before running the code. 
 1. Spider IDE: Created the script and generated the results into csv file using Spider's 
