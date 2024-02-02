@@ -28,56 +28,81 @@ code:
  ‘simulation_time’: Total simulation time in seconds (1 hour in this case). 
 
 **2. Initialization:**
- Initialize variables and data structures and create an empty list to store orders. 
+
+ Initialize variables and data structures and create an empty list to store orders.
+
  Set the initial packing station, order number and current time. 
 
 **3. Order Generation (Part 1):**
+
  Generate random orders within the specified simulation time. 
+
  For each order, record the generated time, order number, a list of randomly selected 
 items, and the assigned packing station. 
+
  Update variables for the next order generation. 
 
 **4. Functions:**
+
  ‘generate_item_list()’: Generates a random item list for an order. 
+
  ‘manhattan_distance()’: Calculates the Manhattan distance between two nodes in the 
 grid. 
+
 **Manhattan Distance:**
 In this problem, the Manhattan distance is used to calculate the distance between two 
 nodes present in the grid pattern of warehouse. It is used to estimate the travel distance for 
 robots to move between nodes in the grid. 
+
  Calculating Robot Travel Distance: 
 When a robot is picking items and delivering them to the designated packing station, 
 Manhattan distance is used to calculate the distance travelled by the robot. The code 
 considers the grid-based structure of the warehouse and calculates the distance as the sum 
 of the absolute differences of the x-coordinates and y-coordinates between the current location 
 and the destination node. 
+
 For example, if a robot is moving from node (2, 3) to node (4, 6) in the grid, the Manhattan 
 distance would be calculated as:
-Manhattan Distance = |4 - 2| + |6 - 3| = 2 + 3 = 5
+
+**Manhattan Distance = |4 - 2| + |6 - 3| = 2 + 3 = 5**
+
 This distance is used to estimate the travel time for the robot based on its speed.
+
  Determining Packing Station Distance: 
+
 Manhattan distance is also used to calculate the distance between the current location of 
 the robot and the designated packing station. This is done to account for the time it takes for 
 the robot to move from the last pick node to the packing station.
+
 The Manhattan distance is a simple and effective way to estimate travel distance within a gridbased warehouse environment, allowing the code to calculate travel times for the robots in the 
 simulation.
 
 **5. Simulation of Picking Modes (Part 2):**
+
  Loop through each order and its item list.
+
  Simulate both picking modes (whole order and split order) for each item.
+
  Calculate the time taken for each picking mode, considering robot availability and 
 packing time.
+
  Store the completion times for both modes in separate lists.
 
 **6. Results (Data Storage and CSV Output):**
+
  Store the completion times for both modes along with order numbers and pick nodes 
 in separate lists.
+
  Create data dictionaries for each mode's results.
+
  Create a Pandas DataFrame to organize the data.
+
  Write the results to a CSV file named "report.csv".
+
 The CSV file has the details of Order Num, Pick_node, completed_time_mode_1 (whole 
 order picked by single robot) and completed_time_mode_2 (split the order by robots) and 
 saves the results into a file. 
+
 Order Num 3, has 8 Pick nodes which are in the increasing order (1,14,15,18,31,32,35,54) 
 and for mode_1 as single robot pick all the items completion time for each item is same which 
 is (00:27:32) and for mode_2 as items were picked by multiple robot’s and completion time for 
@@ -89,6 +114,7 @@ code:**
 
 The code utilizes the following Python libraries and dependencies and make sure to install 
 these libraries before running the code. 
+
 1. Spider IDE: Created the script and generated the results into csv file using Spider's 
 integrated development environment. The csv file will be generated in the same path 
 where the script file is copied and executed. 
@@ -105,6 +131,7 @@ selections. It is also part of Python's standard library and does not require se
 installation.
 
 **Steps to run the script:**
+
 1. Open Spider IDE or make sure the above-mentioned libraries were installed into your 
 environment. 
 2. Copy the project.py file and execute it using Spider or any other python compiler to which 
